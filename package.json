@@ -15,5 +15,22 @@
   "bugs": {
     "url": "https://github.com/ex-marketing/CRUD/issues"
   },
-  "homepage": "https://github.com/ex-marketing/CRUD#readme"
+  "homepage": "https://github.com/ex-marketing/CRUD#readme",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "nodemon": "^1.15.1",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  }
 }
