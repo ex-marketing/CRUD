@@ -1,7 +1,14 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const mongo = require('mongodb');
+const mongoose = require('mongoose');
 const path = require('path');
 
+//MongoDB Connection
+mongoose.connect('mongodb://localhost/crud');
+const db = mongoose.connect;
+
+//Routes
 const routes = require('./routes/index');
 
 //Initialise App With Express
@@ -21,6 +28,6 @@ app.use('/', routes);
 //Set Port
 app.set('port', (process.env.PORT || 3000));
 
-app.listen(app.get('port'), function(){
+app.listen(app.get('port'), function() {
 	console.log('Listening on port '+app.get('port'));
 });
