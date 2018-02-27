@@ -6,6 +6,11 @@ router.get('/', ensureAuthenticated, (req, res) => {
     res.render('index');
 });
 
+//Emplyee List Page
+router.get('/employees', ensureAuthenticated, (req, res) => {
+    res.render('emplist');
+});
+
 //Welcome Page
 router.get('/welcome', (req, res) => {
   res.render('welcome');
